@@ -1,7 +1,6 @@
 # code_challenges
 Different java code challenges, each one  with its own class and test:
-
- - ArrayContainsDuplicate
+ - ArrayContainsDuplicate: 
  - BinarySearchTree
  - CountPrimes
  - DuplicatedChars
@@ -11,11 +10,21 @@ Different java code challenges, each one  with its own class and test:
  - MaximumMinimumArray
  - MergeSortedArray
  - MissingNumber
- - MovingAverage MyLinkedList OddOrEven OnlyDigits PowerOfTwo
-   RemoveDuplicatesSortedArray RemoveElement ReverseString
-   ReverseWordsInString SwapTwoIntegers TwoSum ValidAnagram
-   ValidPalindrome ValidParentheses
+ - MovingAverage
+ - MyLinkedList
+ - OddOrEven
+ - OnlyDigits
+ - PowerOfTwo
+ - RemoveDuplicatesSortedArray
+ - RemoveElement
+ - ReverseString
+ - ReverseWordsInString
+ - SwapTwoIntegers
+ - TwoSum
+ - ValidAnagram
+ - ValidPalindrome
+ - ValidParentheses
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzAzODQ4OTZdfQ==
+eyJoaXN0b3J5IjpbODk5MTE5MzIzXX0=
 -->
