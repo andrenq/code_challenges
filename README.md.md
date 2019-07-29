@@ -11,25 +11,11 @@ Different java code challenges, each one  with its own class and test:
  - MaximumMinimumArray
  - MergeSortedArray
  - MissingNumber
-   -MovingAverage
-   -MyLinkedList
-   -OddOrEven
-   -OnlyDigits
-   -PowerOfTwo
-   -RemoveDuplicatesSortedArray
-   -RemoveElement
-   -ReverseString
-   -ReverseWordsInString
-   -SwapTwoIntegers
-   -TwoSum
-   -ValidAnagram
-
--ValidPalindrome
-
--ValidParentheses
-
-
+ - MovingAverage MyLinkedList OddOrEven OnlyDigits PowerOfTwo
+   RemoveDuplicatesSortedArray RemoveElement ReverseString
+   ReverseWordsInString SwapTwoIntegers TwoSum ValidAnagram
+   ValidPalindrome ValidParentheses
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NTg5NTkyN119
+eyJoaXN0b3J5IjpbLTE3NzAzODQ4OTZdfQ==
 -->
