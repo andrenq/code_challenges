@@ -2,6 +2,12 @@ package ca.jrvs;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Return duplicate characters(in an array) from a given string
+ * Find Duplicate Characters on String
+ * write O(n) solution
+ */
+
 public class DuplicatedChars {
     public static HashMap isDuplicated(char[] chars){
         HashMap<Character, Integer > cMap = new HashMap();

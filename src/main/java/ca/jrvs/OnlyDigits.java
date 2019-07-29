@@ -1,5 +1,9 @@
 package ca.jrvs;
 
+/**
+ * Check if a String contains only digits
+ * without regular expressions
+ */
 public class OnlyDigits {
     public static boolean isOnlyDigits(String s) {
         char[] chars = s.toCharArray();

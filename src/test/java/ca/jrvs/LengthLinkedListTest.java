@@ -4,10 +4,10 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static ca.jrvs.MyLinkedList.*;
-import static ca.jrvs.lengthLinkedList.findLengthLinkedList;
+import static ca.jrvs.LengthLinkedList.findLengthLinkedList;
 import static org.junit.Assert.*;
 
-public class lengthLinkedListTest {
+public class LengthLinkedListTest {
 
     MyLinkedList myLinkedList = new MyLinkedList();
     @Before

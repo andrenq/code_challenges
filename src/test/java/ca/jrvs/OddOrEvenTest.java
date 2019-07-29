@@ -2,21 +2,34 @@ package ca.jrvs;
 
 import org.junit.Test;
 
-import static ca.jrvs.OddOrEven.isOddOrEven;
+import static ca.jrvs.OddOrEven.isOddOrEvenMod;
+import static ca.jrvs.OddOrEven.isOddOrEvenBit;
 import static org.junit.Assert.*;
 
 public class OddOrEvenTest {
 
     @Test
     public void isOddOrEvenTest1() {
-        assertFalse(isOddOrEven( 3));
+        assertFalse(isOddOrEvenBit( 3));
     }
     @Test
     public void isOddOrEvenTest2() {
-        assertTrue(isOddOrEven( 10));
+        assertTrue(isOddOrEvenBit( 10));
     }
     @Test
     public void isOddOrEvenTest3() {
-        assertTrue(isOddOrEven( 2580));
+        assertTrue(isOddOrEvenBit( 2580));
+    }
+    @Test
+    public void isOddOrEvenTest4() {
+        assertFalse(isOddOrEvenMod( 3));
+    }
+    @Test
+    public void isOddOrEvenTest5() {
+        assertTrue(isOddOrEvenMod( 10));
+    }
+    @Test
+    public void isOddOrEvenTest6() {
+        assertTrue(isOddOrEvenMod( 2580));
     }
 }

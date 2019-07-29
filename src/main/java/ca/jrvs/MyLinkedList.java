@@ -1,29 +1,18 @@
 package ca.jrvs;
 
-// Java program to implement
-// a Singly Linked List
+/**
+ * Java program to implement
+ * a Singly Linked List
+ *
+ * https://www.yuque.com/zhujinpei/leecode/ugxpu9
+ */
+
 public class MyLinkedList {
 
     Node head; // head of list
 
-    // Linked list Node.
-    // This inner class is made static
-    // so that main() can access it
-    static class Node {
-        int data;
-        Node next;
-
-        // Constructor
-        Node(int d)
-        {
-            data = d;
-            next = null;
-        }
-    }
-
     // **************INSERTION**************
-    public static MyLinkedList insert(MyLinkedList list, int data)
-    {
+    public static MyLinkedList insert(MyLinkedList list, int data) {
         // Create a new node with given data
         Node new_node = new Node(data);
         new_node.next = null;
@@ -32,8 +21,7 @@ public class MyLinkedList {
         // then make the new node as head
         if (list.head == null) {
             list.head = new_node;
-        }
-        else {
+        } else {
             // Else traverse till the last node
             // and insert the new_node there
             Node last = list.head;
@@ -49,8 +37,7 @@ public class MyLinkedList {
 
     // **************TRAVERSAL**************
     // Method to print the MyLinkedList.
-    public static void printList(MyLinkedList list)
-    {
+    public static void printList(MyLinkedList list) {
         Node currNode = list.head;
         System.out.print("\nMyLinkedList: ");
 
@@ -67,12 +54,10 @@ public class MyLinkedList {
 
     // **************DELETION BY KEY**************
     // Method to delete a node in the LinkedList by KEY
-    public static MyLinkedList deleteByKey(MyLinkedList list, int key)
-    {
+    public static MyLinkedList deleteByKey(MyLinkedList list, int key) {
         // Store head node
         Node currNode = list.head, prev = null;
 
-        //
         // CASE 1:
         // If head node itself holds the key to be deleted
 
@@ -84,10 +69,8 @@ public class MyLinkedList {
             return list;
         }
 
-        //
         // CASE 2:
-        // If the key is somewhere other than at head
-        //
+        // If the key is somewhere other than at head//
         // Search for the key to be deleted,
         // keep track of the previous node
         // as it is needed to change currNode.next
@@ -109,10 +92,7 @@ public class MyLinkedList {
             System.out.println(key + " found and deleted");
         }
 
-        //
         // CASE 3: The key is not present
-        //
-
         // If key was not present in linked list
         // currNode should be null
         if (currNode == null) {
@@ -123,15 +103,11 @@ public class MyLinkedList {
         return list;
     }
 
-    // **************DELETION AT A POSITION**************
-
     // Method to delete a node in the MyLinkedList by POSITION
-    public static MyLinkedList deleteAtPosition(MyLinkedList list, int index)
-    {
+    public static MyLinkedList deleteAtPosition(MyLinkedList list, int index) {
         // Store head node
         Node currNode = list.head, prev = null;
 
-        //
         // CASE 1:
         // If index is 0, then head node itself is to be deleted
 
@@ -145,10 +121,8 @@ public class MyLinkedList {
             return list;
         }
 
-        //
         // CASE 2:
         // If the index is greater than 0 but less than the size of LinkedList
-        //
         // The counter
         int counter = 0;
 
@@ -165,8 +139,7 @@ public class MyLinkedList {
                 // Display the message
                 System.out.println(index + " position element deleted");
                 break;
-            }
-            else {
+            } else {
                 // If current position is not the index
                 // continue to next node
                 prev = currNode;
@@ -177,9 +150,8 @@ public class MyLinkedList {
 
         // If the position element was found, it should be at currNode
         // Therefore the currNode shall not be null
-        //
+
         // CASE 3: The index is greater than the size of the LinkedList
-        //
         // In this case, the currNode should be null
         if (currNode == null) {
             // Display the message
@@ -188,6 +160,22 @@ public class MyLinkedList {
 
         // return the List
         return list;
+    }
+
+    // **************DELETION AT A POSITION**************
+
+    // Linked list Node.
+    // This inner class is made static
+    // so that main() can access it
+    static class Node {
+        int data;
+        Node next;
+
+        // Constructor
+        Node(int d) {
+            data = d;
+            next = null;
+        }
     }
 
 

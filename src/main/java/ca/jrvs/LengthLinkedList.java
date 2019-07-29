@@ -1,6 +1,12 @@
 package ca.jrvs;
 
-public class lengthLinkedList {
+/**
+ * Find the length of a singly linked list
+ * Using the MyLinkedList class created previously
+ * https://java2blog.com/find-length-of-linked-list-in-java/
+ */
+
+public class LengthLinkedList {
     public static int findLengthLinkedList(MyLinkedList myLinkedList){
         MyLinkedList.Node currNode = myLinkedList.head, prev = null;
         if(currNode==null){

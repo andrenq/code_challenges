@@ -14,13 +14,15 @@ public class DuplicatedCharsTest {
         HashMap<Character,Integer> hMap = new HashMap();
         hMap.put('a',3);
         hMap.put('b',2);
-        assertEquals(isDuplicated("abcdaaghtb".toCharArray()),hMap);
+        char[] input = "abcdaaghtb".toCharArray();
+        assertEquals(hMap,isDuplicated(input));
     }
     @Test
     public void isDuplicatedTest2() {
         HashMap<Character,Integer> hMap = new HashMap();
         hMap.put('a',6);
         hMap.put('b',4);
-        assertEquals(isDuplicated("aaaaaabbbb".toCharArray()),hMap);
+        char[] input = "aaaaaabbbb".toCharArray();
+        assertEquals(hMap,isDuplicated(input));
     }
 }

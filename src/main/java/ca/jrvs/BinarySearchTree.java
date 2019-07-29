@@ -1,5 +1,9 @@
 package ca.jrvs;
 
+/**
+ * Implement Binary search tree
+ * https://javarevisited.blogspot.com/2015/10/how-to-implement-binary-search-tree-in-java-example.html#axzz4wnEtnNB3
+ */
 public class BinarySearchTree {
     // Root of BST
     Node root;
